@@ -36,3 +36,10 @@ export interface QSO {
     gridsquare?: string;
     my_gridsquare?: string;
 };
+
+export interface SearchResults {
+    [band: string]: {
+        confirmed: number;
+        unconfirmed: number;
+    }
+}
